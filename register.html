@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Custome style -->
+     <link rel="stylesheet" href="CSS/style.css">
+     <!-- Google fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Candal&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1 class="logo-text"><span>NATURAL</span>GLOW</h1>
+        </div>
+        <i class="fa fa-bars menu-toggle"></i>
+            <ul class="nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <!-- <li><a href="#">Sign Up</a></li>
+                <li><a href="#">Log In</a></li> -->
+                <li>
+                    <a href="#">
+                        <i class="fa fa-user"></i>
+                        User
+                        <i class="fa fa-chevron-down"style="font: size 0.8em;"></i>
+                    </a>
+                    <ul>
+                        <li><a href="#">Dashboard</a></li>
+                        <li><a href="#" class="logout">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+    </header>
+
+    <div class="auth-content">
+
+        <form action="register.html" method="post">
+            <h2 class="form-title">Register</h2>
+
+            <!-- <div class="msg success">
+                <li>Username required</li>
+            </div> -->
+            <div>
+                <label>Username</label>
+                <input type="text" name="username" class="text-input">
+            </div>
+            <div>
+                <label>Email</label>
+                <input type="email" name="email" class="text-input">
+            </div>
+            <div>
+                <label>Password</label>
+                <input type="password" name="password" class="text-input">
+            </div>
+            <div>
+                <label>Confirm Password</label>
+                <input type="password" name="passwordconf" class="text-input">
+            </div>
+            <div>
+                <button type="submit" name="register-btn" class="btn btn-big">Register</button>
+            </div>
+            <p>Or <a href="login.html">Sign In</a></p>
+        </form>
+    </div>
+
+   
+    <!-- JQeuery -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <!-- custom script -->
+     <script src="JS/scripts.js"></script>
+</body>
+</html>
